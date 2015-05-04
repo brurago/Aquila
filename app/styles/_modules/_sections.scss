@@ -1,0 +1,67 @@
+@import '../_base/_variables.scss';
+@import '../_base/_mixins.scss';
+
+.m-section {
+	text-align: center;
+}
+
+.m-section__banner {
+	@extend .m-section;
+	padding: 2.778em 0;
+	margin-top: 80px;
+	transition: margin 0.5s ease-in-out;
+	@media (min-width: 600px) {
+		margin-top: 98px;
+	}
+	@media (min-width: 992px) {
+		margin-top: 133px;
+		padding: 6em 0;
+	}
+	@media (min-width: 1110px) {
+		margin-top: 146px;
+	}
+}
+
+.m-section__foundation {
+	@extend .m-section;
+	padding: 2.222em 0;
+	@media (min-width: 992px) {
+		padding: 2.778em 0;
+	}
+}
+
+.m-section__growth {
+	@extend .m-section__foundation;
+}
+
+.m-section__quote {
+	@extend .m-section;
+	padding: 2.222em 0;
+	@media (min-width: 992px) {
+		padding: 3.889em 0;
+	}
+	p, footer {
+		color: $color-one;
+	}
+	p {
+		font-size: 1.111em;
+		@media (min-width: 912px) {
+			font-size: 1.222em;
+		}
+	}
+}
+
+.m-section__services {
+	@extend .m-section;
+	.m-services {
+		ul {
+			> li {
+				text-align: left;
+			}
+		}
+	}
+	padding: 2.222em 0;
+	@media (min-width: 992px) {
+		padding: 3.889em 0;
+	}
+}

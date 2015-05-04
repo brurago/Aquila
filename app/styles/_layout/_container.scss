@@ -1,0 +1,25 @@
+@import '../_base/_variables.scss';
+@import '../_base/_mixins.scss';
+
+.l-container-sub {
+	min-width: 320px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+.l-container__one {
+	background-color: $color-one;
+}
+
+.l-container__two {
+	background-color: $color-two;
+}
+
+.l-container__three {
+	background-color: $color-three;
+}
+
+.l-container__four {
+	background-color: $color-five;
+}

@@ -1,0 +1,35 @@
+@import '../_base/_variables.scss';
+@import '../_base/_mixins.scss';
+
+// Icon sprites container
+
+.m-sprites {
+    display: none;
+}
+
+// Icon sizes
+
+.m-icon__xl {
+    width: $icon-base-size * 2;
+    height: $icon-base-size * 2;
+}
+
+.m-icon__lg {
+    width: $icon-base-size * 1.4;
+    height: $icon-base-size * 1.4;
+}
+
+.m-icon {
+    width: $icon-base-size;
+    height: $icon-base-size;
+}
+
+.m-icon__sm {
+    width: $icon-base-size / 1.4;
+    height: $icon-base-size / 1.4;
+}
+
+.m-icon__xs {
+    width: $icon-base-size / 2.1;
+    height: $icon-base-size / 2.1;
+}

@@ -1,0 +1,19 @@
+@import '../_base/_variables.scss';
+@import '../_base/_mixins.scss';
+
+.btn {
+	border-radius: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn-default {
+	background-color: transparent;
+	border: 2px solid #FFF;
+	padding: 0.611em 1.278em;
+	color: #FFF;
+	&:hover {
+		color: $color-three;
+		background-color: #FFF;
+		border-color: #FFF;
+	}
+}
