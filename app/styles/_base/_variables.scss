@@ -1,3 +1,13 @@
+// Base unit
+
+$base-unit: 18; // Default
+$base-unit-px: 1px; // PX unit
+
+// PX to EM function converter
+@function em($pixels, $context: $base-unit) {
+  @return #{$pixels/$context}em
+}
+
 // Colors
 
 $color-one: #FFF;
@@ -5,8 +15,16 @@ $color-two: #696969;
 $color-three: #1da9c7;
 $color-four: #ededed;
 $color-five: #f3f3f3;
+$color-six: #e4e4e4;
 
 // Measures
 
-$plus-margin: 0.556em;
-$icon-base-size: 1.667em;
+$plus-margin: 10px; // BUG: multiplying EM is not working
+$icon-base-size: 30px; // BUG: multiplying EM is not working
+
+// Breakpoints
+
+$break-small: 600px;
+$break-medium: 992px;
+$break-medium-minus: 992px -18px;
+$break-large: 1110px;

@@ -21,7 +21,7 @@
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body data-target="#navbar">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -50,7 +50,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="l-navbar__logo" href="#" alt="Aquila">
+            <a class="l-navbar__logo" href="#top" alt="Aquila">
               <h1>Aquila</h1>
             </a>
           </div>
@@ -88,7 +88,7 @@
         <h3>
         Fundada em 2004 no Brasil, e agora baseada nos Estados Unidos, Aquila Brasil tem, ao longo desses anos, desenvolvido e participado em vários projetos na América Latina.
         </h3>
-        <a href="#" class="btn btn-default btn-lg s-plus3x-margin-top">Entre em contato</a>
+        <a href="#contato" class="btn btn-default btn-lg s-plus3x-margin-top">Entre em contato</a>
       </div>
     </section>
     <section class="m-section__growth l-container__one">
@@ -113,9 +113,9 @@
         </blockquote>
       </div>
     </section>
-    <section class="m-section__services l-container__four" id="servicos">
+    <section class="m-section__services l-container__four">
       <div class="l-container-sub">
-        <h4 class="s-plus2x-margin-bottom">Os serviços de consultoria em Fusões e Aquisições incluem:</h4>
+        <h4 class="s-plus2x-margin-bottom" id="servicos">Os serviços de consultoria em Fusões e Aquisições incluem:</h4>
         <div class="row m-services">
           <div class="col-xs-12 col-md-5 col-md-offset-1">
             <ul>
@@ -153,9 +153,9 @@
         </div>
       </div>
     </section>
-    <section class="m-section__team l-container__one" id="equipe">
+    <section class="m-section__team l-container__one">
       <div class="l-container-sub">
-        <h4 class="s-plus2x-margin-bottom">Equipe</h4>
+        <h4 class="s-plus2x-margin-bottom" id="equipe">Equipe</h4>
         <div class="row m-team">
           <div class="col-xs-12 col-md-5 s-plus2x-margin-bottom">
             <img src="images/team-marco.jpg" class="m-team__picture s-plus2x-margin-top" alt="Marco A. Franca">
@@ -191,6 +191,57 @@
         </div>
       </div>
     </section>
+    <section class="m-section__clients l-container__five">
+      <div class="l-container-sub clearfix">
+        <h4 class="s-plus2x-margin-bottom" id="clientes">Nossos clientes</h4>
+        <ul class="m-clients">
+          <li><img src="images/logo-compugraf.gif" alt="Compugraf"></li>
+          <li><img src="images/logo-delta.gif" alt="Delta"></li>
+          <li><img src="images/logo-embratel.gif" alt="Embratel"></li>
+          <li><img src="images/logo-fis.gif" alt="Fidelity National Information Services"></li>
+          <li><img src="images/logo-g100.gif" alt="G100 LatAm"></li>
+          <li><img src="images/logo-gsplasticos.gif" alt="GS Plásticos"></li>
+          <li><img src="images/logo-intelig.gif" alt="Intelig"></li>
+          <li><img src="images/logo-irusa.gif" alt="Irusa"></li>
+          <li><img src="images/logo-iqara.gif" alt="Iqara"></li>
+          <li><img src="images/logo-onduline.gif" alt="Onduline"></li>
+          <li><img src="images/logo-pakprint.gif" alt="Pakprint"></li>
+          <li><img src="images/logo-prnewswire.gif" alt="PR Newswire"></li>
+          <li><img src="images/logo-tesla.gif" alt="Tesla"></li>
+          <li><img src="images/logo-thomson.gif" alt="Thomson Reuters"></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="m-section__contact l-container__three">
+      <div class="l-container-sub clearfix">
+        <h4 id="contato">Contato</h4>
+        <ul class="m-contact">
+          <li class="m-contact__br">
+            <p class="m-contact__country">United States</p>
+            <p>
+              4363 Doral Court<br>
+              Lakeland, Florida 33801
+            </p>
+            <p>
+              Telefone: +1 (863) 602-1625<br>
+              E-mail: <a href="mailto:contact@aquilbrasil.com">contact@aquilbrasil.com</a>
+            </p>
+          </li>
+          <li class="m-contact__us">
+            <p class="m-contact__country">Brazil</p>
+            <p>
+              Rua Silvia, 118-1301<br>
+              Sao Paulo, Sao Paulo 01331-010              
+            </p>
+            <p>
+              Telefone: +55 (11) 9-9201-9015<br>
+              E-mail: <a href="mailto:contact@aquilabrasil.com">contact@aquilabrasil.com</a>
+            </p>
+          </li>
+        </ul>
+        <img class="m-raio-logo" src="images/logo-raio.png" alt="Logotipo">
+      </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -221,6 +272,7 @@
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="/bower_components/scrollup/src/jquery.scrollUp.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->

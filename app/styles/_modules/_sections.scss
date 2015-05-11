@@ -7,26 +7,26 @@
 
 .m-section__banner {
 	@extend .m-section;
-	padding: 2.778em 0;
-	margin-top: 80px;
+	padding: em(50) 0;
+	margin-top: em(80);
 	transition: margin 0.5s ease-in-out;
-	@media (min-width: 600px) {
-		margin-top: 98px;
+	@media (min-width: $break-small) {
+		margin-top: em(98);
 	}
-	@media (min-width: 992px) {
-		margin-top: 133px;
-		padding: 6em 0;
+	@media (min-width: $break-medium) {
+		margin-top: em(133);
+		padding: em(108) 0;
 	}
-	@media (min-width: 1110px) {
-		margin-top: 146px;
+	@media (min-width: $break-large) {
+		margin-top: em(146);
 	}
 }
 
 .m-section__foundation {
 	@extend .m-section;
-	padding: 2.222em 0;
-	@media (min-width: 992px) {
-		padding: 2.778em 0;
+	padding: em(39) 0;
+	@media (min-width: $break-medium) {
+		padding: em(50) 0;
 	}
 }
 
@@ -36,17 +36,17 @@
 
 .m-section__quote {
 	@extend .m-section;
-	padding: 2.222em 0;
-	@media (min-width: 992px) {
-		padding: 3.889em 0;
+	padding: em(39) 0;
+	@media (min-width: $break-medium) {
+		padding: em(70) 0;
 	}
 	p, footer {
 		color: $color-one;
 	}
 	p {
-		font-size: 1.111em;
-		@media (min-width: 912px) {
-			font-size: 1.222em;
+		font-size: em(19);
+		@media (min-width: $break-medium) {
+			font-size: em(21);
 		}
 	}
 }
@@ -61,15 +61,15 @@
 			}
 		}
 	}
-	padding: 2.222em 0;
-	@media (min-width: 992px) {
-		padding: 3.889em 0;
+	padding: em(39) 0;
+	@media (min-width: $break-medium) {
+		padding: em(70) 0;
 	}
 	&:after {
 		content: '';
 		display: block;
 		width: 100%;
-		height: 2px;
+		height: em(2);
 		position: absolute;
 		bottom: 0;
 		background: linear-gradient(to right, lighten($color-two,70%) 0%,lighten($color-two,50%) 50%,lighten($color-two,70%) 100%);
@@ -83,18 +83,95 @@
 			border-radius: 100%;
 		}
 	}
-	padding: 2.222em 0;
-	@media (min-width: 992px) {
-		padding: 3.889em 0;
+	padding: em(39) 0;
+	@media (min-width: $break-medium) {
+		padding: em(70) 0;
+	}
+}
+
+.m-section__clients {
+	@extend .m-section;
+	display: block;
+	padding: em(39) 0;
+	.m-clients {
+		margin: em(60) auto 0 auto;
+		padding: 0;
+		list-style: none;
+		max-width: $break-medium;
+		> li {
+			float: left;
+			max-width: 70px;
+			min-width: 40px;
+			min-height: 60px;
+			box-sizing: border-box;
+			display: block;
+			margin: em(20);
+			> img {
+				max-width: 100%;
+			}
+			@media (min-width: $break-medium) {
+				max-width: 200px;
+				min-width: 190px;
+				min-height: 100px;
+			}
+		}
+		
+	}
+	@media (min-width: $break-medium) {
+		padding: em(70) 0;
+	}
+}
+
+.m-section__contact {
+	@extend .m-section;
+	padding: em(100) 0 em(50) 0;
+	color: $color-six;
+	position: relative;
+	a, a:hover, a:active {
+		color: #FFF;
+	}
+	font-weight: 600;
+	h4 {
+		color: #FFF;
+		font-weight: 700;
+		margin-bottom: em(30);
+		@media (min-width: $break-medium) {
+			text-align: left;
+		}
+	}
+	.m-contact {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		.m-contact__country {
+			color: #FFF;
+		}
+		> li {
+			text-align: left;
+			float: left;
+			font-size: em(15);
+			line-height: em(28);
+			&:first-child {
+				margin-bottom: em(40);
+			}
+			@media (min-width: $break-medium) {
+				margin-right: em(120);
+			}
+		}
+	}
+	.m-raio-logo {
+		position: absolute;
+		bottom: em(60);
+		right: em(20);
 	}
 }
 
 .m-vr {
 	position: relative;
-	height: 800px;
+	height: em(800);
 	.m-vr__line {
-		width: 2px;
-		height: 510px;
+		width: em(2);
+		height: em(510);
 		display: block;
 		background: linear-gradient(to bottom, lighten($color-two,70%) 0%,lighten($color-two,50%) 50%,lighten($color-two,70%) 100%);
 		position: absolute;

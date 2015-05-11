@@ -8,12 +8,32 @@
 
 .btn-default {
 	background-color: transparent;
-	border: 2px solid #FFF;
-	padding: 0.611em 1.278em;
+	border: em(2) solid #FFF;
+	padding: em(10) em(23);
 	color: #FFF;
 	&:hover {
 		color: $color-three;
 		background-color: #FFF;
 		border-color: #FFF;
+	}
+}
+
+// Scroll Up Button
+
+#scrollUp {
+	@extend .btn;
+	bottom: -$plus-margin;
+	right: $plus-margin;
+	padding: $plus-margin ($plus-margin*2);
+	color: $color-three;
+	border: em(3) solid $color-three;
+	text-decoration: none;
+	background-color: #FFF;
+	&:hover {
+		padding: ($plus-margin*2) ($plus-margin*2);
+		color: #FFF;
+		background-color: $color-three;
+		border-color: $color-three;
+		bottom: 0;
 	}
 }

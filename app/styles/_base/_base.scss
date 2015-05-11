@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: $base-unit * $base-unit-px;
     color: $color-two;
     background-color: $color-two;
 }
@@ -14,12 +14,12 @@ a {
 }
 
 p, ul, ol {
-	font-size: 1em;
+	font-size: em(18);
 }
 
 ul, ol {
 	margin: 0;
-	line-height: 1.6em;
+	line-height: em(28);
 }
 
 blockquote {

@@ -1,6 +1,7 @@
 @import '../_base/_variables.scss';
 @import '../_base/_mixins.scss';
 
+// Header
 .l-header {
 	position: fixed;
 	width: 100%;
@@ -12,16 +13,17 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 2px;
+		height: em(2);
 		background: linear-gradient(to right, lighten($color-two,50%) 0%,$color-five 50%,lighten($color-two,50%) 100%);
 	}
 }
 
+// Navbar
 .l-navbar {
 	border-radius: 0;
 	border: none;
 	background-color: transparent;
-	margin: 15px 0;
+	margin: em(15) 0;
 	position: relative;
 	z-index: 99999;
 
@@ -32,12 +34,12 @@
 		position: relative;
 		transition: margin 0.5s ease-in-out;
 		h1 {
-			text-indent: -9999px;
+			text-indent: em(-99999);
 			overflow: hidden;
 			margin: 0;
 			padding: 0;
-			width: 176px;
-			height: 46px;
+			width: em(176);
+			height: em(46);
 			background: url('../images/logo.png') no-repeat;
 			background-size: 100%;
 			transition: all 0.5s ease-in-out;
@@ -47,8 +49,8 @@
 
 	// Navbar custom
 	.l-navbar-collapse {
-		margin-left: -18px;
-		margin-right: -18px;
+		margin-left: em(-18);
+		margin-right: em(-18);
 		padding: 0;
 		position: relative;
 
@@ -60,12 +62,12 @@
 			padding: 0;
 			line-height: 0;
 			position: absolute;
-			top: 28px;
-			left: 18px;
+			top: em(28);
+			left: em(18);
 			z-index: 9999;
 			> li {
 				display: inline-block;
-				margin: 0 0.2em;
+				margin: 0 em(3);
 				opacity: 0.5;
 				&.active {
 					opacity: 1;
@@ -78,42 +80,42 @@
 				display: block;
 				margin: 0;
 				padding: 0;
-				width: 16px;
-				height: 11px;
-				text-indent: -9999px;
+				width: em(16);
+				height: em(11);
+				text-indent: em(-99999);
 				overflow: hidden;
 				background: url('../images/languages.gif') no-repeat;
 			}
 			.en > a {
-				background-position: 0 -11px;
+				background-position: 0 em(-11);
 			}
 		}
 
 		// Menu
 		.l-navbar-nav {
 			padding: 0;
-			margin-left: 0;
-			margin-right: 0;
-			font-size: 1.333em;
+			margin: 0;
+			font-size: em(23);
 			background-color: #efefef;
+			overflow: hidden;
 			> li {
 				text-align: right;
-				margin-right: 30px;
+				margin-right: em(30);
 				> a {
 					color: $color-three;
-					padding: 0.722em 0;
+					padding: em(12) 0;
 					display: inline-block;
-					border-bottom: 1px solid transparent;
+					border-bottom: em(1) solid transparent;
 					transition: all 0.3s ease-in-out;
 					&:hover {
 						color: $color-two;
-						border-bottom: 3px solid lighten($color-two,10%);
+						border-bottom: em(3) solid lighten($color-two,10%);
 					}
 				}
 				&.active {
 					> a, > a:hover {
 						background-color: transparent;
-						border-bottom: 3px solid $color-three;
+						border-bottom: em(3) solid $color-three;
 						color: $color-two;
 					}
 				}
@@ -121,14 +123,15 @@
 		}
 	}
 
-	@media (min-width: 600px) and (max-width: 991px) {
-		margin: 20px 0;
-	}
+	// Navbar Mediaqueries
 
-	@media (min-width: 992px) {
-		margin: 30px 0;
+	@media (min-width: $break-small) and (max-width: $break-medium-minus) {
+		margin: em(20) 0;
+	}
+	@media (min-width: $break-medium) {
+		margin: em(30) 0;
 		.l-navbar__logo {
-			margin-top: 15px;
+			margin-top: em(10);
 		}
 		.l-navbar-collapse {
 			margin-left: 0;
@@ -140,13 +143,13 @@
 			}
 			.l-navbar-nav {
 				width: auto;
-				margin-top: 1em;
-				font-size: 0.9em;
+				margin-top: em(18);
+				font-size: em(16);
 				background-color: transparent;
 				> li {
 					margin-right: 0;
 					text-align: center;
-					padding: 0 1em;
+					padding: 0 em(18);
 					&:first-child {
 						padding-left: 0;
 					}
@@ -154,36 +157,36 @@
 						padding-right: 0;
 					}
 					> a {
-						padding: 0.722em 0;
+						padding: em(12) 0;
 					}
 				}
 			}
 		}
 	}
-
-	@media (min-width: 600px) {
+	@media (min-width: $break-small) {
 		.l-navbar__logo {
 			h1 {
-				width: 200px;
-				height: 52px;
+				width: em(200);
+				height: em(52);
 			}
 		}
 	}
-
-	@media (min-width: 1110px) {
+	@media (min-width: $break-large) {
 		.l-navbar__logo {
 			margin-top: 0;
 			h1 {
-				width: 309px;
-				height: 80px;
+				width: em(309);
+				height: em(80);
 			}
 		}
 	}
 }
 
+// Toggle menu (burger) customization
 .navbar-default {
+	border: none;
 	.navbar-toggle {
-		margin: 0.5em 0 0 0;
+		margin: em(9) 0 0 0;
 		border: none;
 		transition: background-color 0.5s ease-in-out;
 		z-index: 999999;
@@ -192,13 +195,9 @@
 		}
 		.icon-bar {
 			background-color: #626262;
-			width: 33px;
-			height: 3px;
-			border-radius: 40px;
+			width: em(33);
+			height: em(3);
+			border-radius: em(40);
 		}
 	} 
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border: none;
 }
