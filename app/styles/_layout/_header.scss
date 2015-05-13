@@ -33,6 +33,7 @@
 		margin-top: 0;
 		position: relative;
 		transition: margin 0.5s ease-in-out;
+		z-index: 9999;
 		h1 {
 			text-indent: em(-99999);
 			overflow: hidden;

@@ -22,7 +22,7 @@ var desktopScreen = matchMedia('(min-width:992px)');
 
 var offsetScrollMobile = function () {
 	if (mobileScreen.matches) {
-		$('.navbar-nav li a, a.l-navbar__logo, .btn-default').click(function () {
+		$('.navbar-nav li a, .l-navbar__logo, .btn-default').click(function () {
 			var scrollPos = $('body').find($(this).attr('href')).offset().top - offsetHeightMobile;
 			$('body,html').animate({
 				scrollTop: scrollPos
