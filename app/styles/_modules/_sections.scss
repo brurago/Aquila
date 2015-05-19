@@ -115,7 +115,19 @@
 				min-height: 100px;
 			}
 		}
-		
+	}
+	.m-clients-logos {
+		text-align: center;
+		img {
+			max-width: em(100);
+			margin: em(20);
+		}
+		@media (min-width: $break-medium) {
+			img {
+				max-width: em(150);
+				margin: em(30) em(60);
+			}
+		}
 	}
 	@media (min-width: $break-medium) {
 		padding: em(70) 0;
