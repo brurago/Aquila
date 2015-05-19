@@ -93,29 +93,6 @@
 	@extend .m-section;
 	display: block;
 	padding: em(39) 0;
-	.m-clients {
-		margin: em(60) auto 0 auto;
-		padding: 0;
-		list-style: none;
-		max-width: $break-medium;
-		> li {
-			float: left;
-			max-width: 70px;
-			min-width: 40px;
-			min-height: 60px;
-			box-sizing: border-box;
-			display: block;
-			margin: em(20);
-			> img {
-				max-width: 100%;
-			}
-			@media (min-width: $break-medium) {
-				max-width: 200px;
-				min-width: 190px;
-				min-height: 100px;
-			}
-		}
-	}
 	.m-clients-logos {
 		text-align: center;
 		img {
